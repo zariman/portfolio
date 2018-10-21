@@ -1,0 +1,35 @@
+.view1 {
+    background: url("assets/img/agriculture-beautiful-clouds-539711.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+.view2 {
+    background: url("assets/img/beautiful-blue-sky-body-of-water-1170572.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+.content{
+    padding: 50px 200px;
+    width: 100%;
+    background: white;
+    overflow: visible;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 1.5rem;
+}
