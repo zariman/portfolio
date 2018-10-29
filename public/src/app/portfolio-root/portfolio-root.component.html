@@ -1,0 +1,75 @@
+<div class="d-flex justify-content-around">
+  <mat-card data-jarallax-element="0 100" class="example-card rgba-black-light" style="width: 25%; display: inline-block">
+    <mat-card-header class="d-flex justify-content-center">
+      <mat-card-title style="font-size: 1.5rem">Who Will Win March Madness?</mat-card-title>
+      <mat-card-subtitle class="indigo-text font-weight-bold">HTML/CSS, JavaScript, Python, Django</mat-card-subtitle>
+    </mat-card-header>
+    <img (click)=imgOnClick($event.target) mat-card-image src="assets\img\march-madness-bracket.png" alt="march-madness-bracket">
+    <mat-card-content>
+      <p>
+        This project helps users visualize which stat categories contribute the most in winning a NCAA tournament game. Users can use this information to predict who will have the upperhand between any two NCAA teams based on their regular season statistics (work in progress).
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="https://github.com/zariman/march_madness" target="_blank" class="btn btn-primary waves-light" mdbWavesEffect>
+        <mdb-icon class="mr-1" icon="github"></mdb-icon>Github
+      </a>
+      <a href="https://github.com/zariman/march_madness" target="_blank" tabindex="-1" class="btn btn-danger disabled waves-light" mdbWavesEffect>
+        <mdb-icon class="mr-1" icon="play"></mdb-icon>Run
+      </a>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card rgba-black-light" style="width: 25%; display: inline-block">
+    <mat-card-header class="d-flex justify-content-center">
+      <mat-card-title style="font-size: 1.5rem">Space Pong</mat-card-title>
+      <mat-card-subtitle class="indigo-text font-weight-bold">HTML/CSS, JavaScript, Java, Spring Boot </mat-card-subtitle>
+    </mat-card-header>
+    <img (click)=imgOnClick($event.target) mat-card-image src="assets\img\space-pong-online.png" alt="Photo of space">
+    <mat-card-content>
+      <p>
+        This project utilizes sockets to enable an online multiplayer experience between two players in a game of classic pong. Graphics have been upgraded to 3-D with the help of Three.js. Try your luck in becoming the best pong player in the universe! (work in progress)
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="https://github.com/zariman/PongApp" target="_blank" class="btn btn-primary waves-light" mdbWavesEffect>
+        <mdb-icon class="mr-1" icon="github"></mdb-icon>Github
+      </a>
+      <a href="https://github.com/zariman/PongApp" target="_blank" tabindex="-1" class="btn btn-danger disabled  waves-light" mdbWavesEffect>
+        <mdb-icon class="mr-1" icon="play"></mdb-icon>Run
+      </a>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card data-jarallax-element="0 -100" class="example-card rgba-black-light pl-0 pr-0" style="width: 25%; display: inline-block">
+    <mat-card-header class="d-flex justify-content-center">
+      <mat-card-title style="font-size: 1.5rem">24 Seconds <mdb-icon class="light-green-text ml-1" icon="android"></mdb-icon></mat-card-title>
+      <mat-card-subtitle class="indigo-text font-weight-bold">C#, Unity3D, Blender</mat-card-subtitle>
+    </mat-card-header>
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RX815K19MMI" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+    <mat-card-content style="padding: 24px">
+      <p>
+        Developed for Android and compatible for most phones. Started out as a solo passion project. Swipe the screen to dribble and shoot a basketball. Objective is simple: put the ball in the basket. Gameplay modes include tutorial, shootaround, 3-point contest, and player vs. CPU. Available in the Google Play Market now!
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="https://github.com/zariman/Unity-Basketball" target="_blank" class="btn btn-primary waves-light" mdbWavesEffect>
+        <mdb-icon class="mr-1" icon="github"></mdb-icon>Github
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.Yooferson.TwentyFourSeconds" target="_blank" class="btn btn-danger waves-light" mdbWavesEffect>
+        <mdb-icon class="mr-1" icon="play"></mdb-icon>Play
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!-- The Modal -->
+<div (click)="closeModal()" #myModal class="modal" id="myModal">
+
+  <!-- Modal Content (The Image) -->
+  <img #modalImg class="modal-content" id="img01">
+
+</div>

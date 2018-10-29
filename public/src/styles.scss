@@ -1,16 +1,92 @@
-.view1 {
-    background: url("assets/img/agriculture-beautiful-clouds-539711.jpg")no-repeat center center;
-    background-size: cover;
+body{
+    overflow-x: hidden;
+}
+
+.images{
+    margin-top: 20px;
+}
+    .images > img {
+        margin: 10px;
+    }
+
+.example-small-box, .example-large-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .example-small-box {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .example-large-box {
+    height: 300px;
+    width: 300px;
+  }
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
     height: 100vh;
 }
-.view2 {
-    background: url("assets/img/beautiful-blue-sky-body-of-water-1170572.jpg")no-repeat center center;
-    background-size: cover;
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.demo-table {
+    display: table;
+    width: 100%;
     height: 100vh;
+    // background-color: rgba(39, 35, 51, 0.25);
+    color: #fff;
+}
+.demo-table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.aboutMe span {
+    position: relative;
+    display: inline-block;
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Mali', cursive;
+    // font-family: 'Merriweather', serif;
 }
 
 .navbar {
     background-color: transparent;
+}
+
+header a {
+    font-weight: 500;
 }
 
 .top-nav-collapse {
@@ -23,13 +99,83 @@
     }
 }
 
-.content{
-    padding: 50px 200px;
-    width: 100%;
-    background: white;
-    overflow: visible;
+.gap{
+    padding: 200px 0;
+    overflow: hidden;
     text-align: center;
-    margin-left: auto; 
-    margin-right: auto;
-    font-size: 1.5rem;
 }
+.gap > h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+mat-card > img {
+    cursor: pointer;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+#formview textarea {
+    height: 10.3em; }
+
+input, textarea {
+    font-size: 0.8em;
+    font-family: 'proxima-nova-soft', sans-serif;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.9em;
+    transition: all 0.3s ease-in-out;
+    width: 100%; }
+    input.code, textarea.code {
+        font-family: "source-code-pro", monospace; }
+    input:focus, textarea:focus {
+        border-color: lightblue;
+        outline: none;
+        box-shadow: 0 0 5px 1px lightblue; }
